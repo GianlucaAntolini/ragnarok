@@ -1,8 +1,10 @@
-import json
+import sys
 import os
+import json
 import tempfile
 import unittest
 
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../../')))
 from src.ragnarok.scripts.check_trec_rag24_gen import Errlog, check_rag_gen_run
 
 
